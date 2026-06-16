@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-Ce module fournit une coroutine asynchrone simple pour expérimenter
-les bases du fonctionnement de asyncio et des délais aléatoires.
+This module provides an asynchronous coroutine that waits for a random delay.
 """
 import asyncio
 import random
@@ -9,8 +8,8 @@ import random
 
 async def wait_random(max_delay: int = 10) -> float:
     """
-    Attend un délai aléatoire entre 0 et max_delay secondes,
-    puis retourne ce délai.
+    Asynchronous coroutine that takes in an integer argument, waits for a
+    random delay between 0 and max_delay seconds, and eventually returns it.
     """
     random.uniform(0, max_delay)
     delay = random.uniform(0, max_delay)
