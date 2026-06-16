@@ -13,6 +13,6 @@ async def wait_random(max_delay: int = 10) -> float:
     puis retourne ce délai.
     """
     random.uniform(0, max_delay)
-    delai = random.uniform(0, max_delay)
-    await asyncio.sleep(delai)
-    return delai
+    delay = random.uniform(0, max_delay)
+    await asyncio.sleep(delay)
+    return delay
